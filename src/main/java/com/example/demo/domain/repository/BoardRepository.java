@@ -25,4 +25,7 @@ public interface BoardRepository extends JpaRepository<Board, String> {
     @Query("SELECT b FROM Board b WHERE number = :number")
     Optional<Board> findByNum(@Param("number") Long number);
 
+    List<Board> findByTitle(String keyword);
+
+
 }

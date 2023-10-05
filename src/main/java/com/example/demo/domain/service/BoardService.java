@@ -189,5 +189,10 @@ public class BoardService {
 
         return false;
     }
+    @Transactional(rollbackFor = SQLException.class)
+    public List<Board> search_board(String keyword){
+        List<Board> list = boardRepository.findByTitle(keyword);
+        return list;
+    }
 
 }

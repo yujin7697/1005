@@ -31,6 +31,15 @@ public class UserDto {
 	{
 		UserDto dto  = new UserDto();
 		dto.setEmail(user.getEmail());
+		dto.setPassword(user.getPassword());
+		dto.setZipcode(user.getZipcode());
+		dto.setNickname(user.getNickname());
+		dto.setName(user.getName());
+		dto.setAddr1(user.getAddr1());
+		dto.setAddr2(user.getAddr2());
+		dto.setBirth(user.getBirth());
+		dto.setPhone(user.getPhone());
+		dto.setRole(user.getRole());
 		dto.setProfile(user.getProfile());
 
 		return dto;
